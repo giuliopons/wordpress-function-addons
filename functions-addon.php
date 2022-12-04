@@ -3,7 +3,8 @@
 
 
 /* ----------------------------------------------------------------------------*/
-/* 1. add filters for post parent on specific post type list (book in example) */
+/* 1. add filters for post parent field on specific post type list (book in    */
+/*    example) in the Wordpress Admin post list                                */
 /* ----------------------------------------------------------------------------*/
 add_filter( 'views_edit-book', 'wfa_add_filter_link' );
 function wfa_add_filter_link( array $views ) {
@@ -31,4 +32,4 @@ add_action( 'init', 'wfa_make_post_parent_public_qv' );
 
 
 
-^>
+?>
